@@ -1,0 +1,7 @@
+Worker_ID,Worker_Name,Category,Cooperative_Group,Rating,Total_Reviews,Total_Jobs_Completed,Base_Rate_INR,Total_Gross_Revenue_INR,Worker_Payout_95pct_INR,Platform_Reserve_5pct_INR,Status
+1,"Rekha Kumari","cleaning","Nari Shakti Cooperative",4.9,142,1450,2499,3626049,3444747,181302,Active
+2,"Mohammed Irfan","plumbing","Saathi Workers Collective",4.8,98,980,399,391419,371848,19571,Active
+3,"Meena W.","cleaning","Nari Shakti Cooperative",4.7,64,410,1899,778590,739661,38930,Active
+4,"Vijay Salian","electrical","Saathi Workers Collective",4.9,112,1120,549,615429,584658,30771,Active
+5,"Pushpa Rani","cooking","Annapurna Cooks Co-op",4.9,156,420,4500,1894500,1799775,94725,Active
+6,"Sunita Devi","gardening","Green Valley Farmers",4.8,78,310,899,278690,264756,13935,Active

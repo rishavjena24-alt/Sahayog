@@ -1,0 +1,7 @@
+Booking_ID,Customer_Name,Service_Assigned,Worker_ID,Date_Scheduled,Time_Slot,Total_Amount_INR,Payment_Mode,Service_Status,Customer_Rating,Customer_Address
+"BK-7840","Ananya Sharma","Full Home Cleaning",1,"2026-09-18","10:00 AM",2499,"UPI","confirmed",Unrated,"405, 4th Cross, Koramangala, Bengaluru"
+"BK-7841","Rahul Verma","Plumbing Repair",2,"2026-09-19","02:00 PM",399,"Card","confirmed",Unrated,"12, 100ft Road, Indiranagar, Bengaluru"
+"BK-7842","Farhan Ali","AC Servicing & Repair",4,"2026-09-20","04:00 PM",549,"Cash","pending",Unrated,"Flat 302, Palm Meadows, Whitefield"
+"BK-7839","Ananya Sharma","Home Cook (Daily Tiffin)",5,"2026-09-10","01:00 PM",4500,"UPI","completed",5,"405, 4th Cross, Koramangala, Bengaluru"
+"SH-0921","Test Customer","Cooperative Service",N/A,"2026-09-25","10:00 AM",999,"UPI","confirmed",Unrated,"Test Address, Bengaluru"
+"SH-5341","Test Customer","Cooperative Service",N/A,"2026-09-25","10:00 AM",999,"UPI","confirmed",Unrated,"Test Address, Bengaluru"

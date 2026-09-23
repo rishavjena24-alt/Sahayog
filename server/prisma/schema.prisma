@@ -1,0 +1,116 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          String   @id @default(uuid())
+  email       String   @unique
+  password    String
+  name        String
+  role        String   @default("customer") // customer, provider, admin
+  location    String?
+  initials    String?
+  phone       String?
+  memberSince String?
+  createdAt   DateTime @default(now())
+}
+
+model Category {
+  id    String @id
+  label String
+  icon  String
+}
+
+model Service {
+  id            Int      @id @default(autoincrement())
+  name          String
+  category      String
+  categoryLabel String
+  price         Int
+  rating        Float    @default(5.0)
+  reviews       Int      @default(0)
+  duration      String
+  booked        Int      @default(0)
+  verified      Boolean  @default(true)
+  popular       Boolean  @default(false)
+  description   String
+  inclusions    String   // JSON string of array
+  providerIds   String   // JSON string of array
+  createdAt     DateTime @default(now())
+}
+
+model Provider {
+  id          Int      @id @default(autoincrement())
+  name        String
+  role        String
+  category    String
+  avatar      String
+  color       String   @default("blue")
+  rating      Float    @default(5.0)
+  reviews     Int      @default(0)
+  jobs        Int      @default(0)
+  price       Int
+  experience  String
+  cooperative String
+  location    String
+  verified    Boolean  @default(false)
+  available   Boolean  @default(true)
+  skills      String   // JSON string of array
+  about       String
+  createdAt   DateTime @default(now())
+}
+
+model Booking {
+  id         String   @id
+  customer   String
+  customerId String?
+  providerId Int?
+  serviceId  Int?
+  date       String
+  time       String
+  price      Int
+  status     String   @default("confirmed") // confirmed, completed, cancelled, pending
+  address    String?
+  phone      String?
+  notes      String?
+  payment    String   @default("UPI")
+  rating     Int?
+  createdAt  DateTime @default(now())
+}
+
+model ProviderRequest {
+  id       String @id
+  customer String
+  service  String
+  date     String
+  time     String
+  price    Int
+  status   String @default("pending") // pending, accepted, declined
+  location String
+}
+
+model CooperativeGroup {
+  id          Int     @id @default(autoincrement())
+  name        String
+  members     Int     @default(1)
+  type        String
+  city        String
+  about       String
+  membersList String  // JSON string
+  verified    Boolean @default(true)
+}
+
+model Review {
+  id       Int    @id @default(autoincrement())
+  name     String
+  service  String
+  provider String
+  rating   Int
+  text     String
+  date     String
+}

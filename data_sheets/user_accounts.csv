@@ -1,0 +1,6 @@
+User_ID,Full_Name,Email_Login_ID,Role,Location,Phone,Member_Since,Created_At
+"CU-101","Ananya Sharma","ananya@example.com","customer","Bengaluru, KA","+91 98765 43210","2025","2026-09-21T14:26:47.735Z"
+"PR-201","Rekha Kumari","rekha@example.com","provider","Koramangala, Bengaluru","+91 98765 43745","2023","2026-09-21T14:26:47.735Z"
+"AD-001","Sahayog Admin","admin@sahayog.in","admin","Bengaluru","+91 80123 45678","2022","2026-09-21T14:26:47.735Z"
+"CU-102","Rahul Verma","rahul@example.com","customer","Indiranagar, Bengaluru","+91 98765 43222","2025","2026-09-21T14:26:47.735Z"
+"PR-202","Mohammed Irfan","irfan@example.com","provider","Indiranagar, Bengaluru","+91 98765 43111","2024","2026-09-21T14:26:47.735Z"
